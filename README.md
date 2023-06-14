@@ -10,5 +10,5 @@ Associações e sindícatos, Condomínios ou Cooperativas.
 
 ## Tecnologias
 
-HTML, CSS, JS e Django.
+HTML, CSS, JS e Django, SQLITE (por enquanto).
 ### Pedro Lisboa 

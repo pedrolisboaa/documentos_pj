@@ -1,6 +1,16 @@
 {% extends 'global/base.html' %}
 {% block conteudo %}
 
-    Eu sou o index
+    <div>
+        <ul>
+            <li><a href="{% url 'contas:recem_construida' %}">Recém Construída</a></li>
+            <li><a href="{% url 'contas:mei' %}">MEI</a></li>
+            <li><a href="{% url 'contas:simples' %}">SIMPLES</a></li>
+            <li><a href="{% url 'contas:lucro_real' %}">Lucro Real/Presumido</a></li>
+            <li><a href="{% url 'contas:associacao' %}">Associações e Sindicatos</a></li>
+            <li><a href="{% url 'contas:condominio' %}">Condomínio</a></li>
+            <li><a href="{% url 'contas:cooperativa' %}">Cooperativa</a></li>
+        </ul>
+    </div>
 
 {% endblock conteudo %}

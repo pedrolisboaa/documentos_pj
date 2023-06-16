@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import RecemContruida, Mei, Simples, LucroReal, Associacao, Condominio, Cooperativa
+from .models import RecemConstruida , Mei, Simples, LucroReal, Associacao, Condominio, Cooperativa
 
 
 # Register your models here.
-@admin.register(RecemContruida, Mei, Simples, LucroReal, Associacao, Condominio, Cooperativa)
+@admin.register(RecemConstruida, Mei, Simples, LucroReal, Associacao, Condominio, Cooperativa)
 class RecemContruidaAdmin(admin.ModelAdmin):
     list_display = (
         'nome_completo',

@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from contas.forms import RecemConstruidaForm
 
 def index(request):
     context = {
@@ -8,9 +9,17 @@ def index(request):
 
 
 def recem_construida(request):
+
+    form = RecemConstruidaForm()
+
+   
     context = {
         'titulo_pagina': 'Recém Construída',
+        'form': form,
     }
+
+
+
     return render(request, 'contas/recem.html', context)
 
 
@@ -33,20 +42,6 @@ def lucro_real(request):
         'titulo_pagina': 'Lucro Real - Presumido',
     }
     return render(request, 'contas/lucro_real.html', context)
-
-
-def recem_construida(request):
-    context = {
-        'titulo_pagina': 'Recém Construída',
-    }
-    return render(request, 'contas/recem.html', context)
-
-
-def recem_construida(request):
-    context = {
-        'titulo_pagina': 'Recém Construída',
-    }
-    return render(request, 'contas/recem.html', context)
 
 
 def associacao(request):

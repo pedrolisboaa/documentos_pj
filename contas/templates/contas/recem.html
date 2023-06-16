@@ -2,6 +2,12 @@
 {% block conteudo %}
 
     <h1>{{titulo_pagina}}</h1>
+    <p>{{ teste }} oi </p>
 
+
+    {% for campo in form  %}
+        {{ campo }}
+    {% endfor %}
+   
 
 {% endblock conteudo %}

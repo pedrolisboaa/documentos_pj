@@ -4,7 +4,7 @@ from django.utils import timezone
 # Create your models here.
 
 
-class RecemContruida(models.Model):
+class RecemConstruida(models.Model):
     tipo_empresa = models.CharField(max_length=100, default='Recém Construída')
     nome_completo = models.CharField(verbose_name='Nome Completo', max_length=250)
     email = models.EmailField(verbose_name='Email')
